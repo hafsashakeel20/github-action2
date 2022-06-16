@@ -28,3 +28,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project!!
+
+    windows-print:
+      runs-on: windows-latest
+
+      steps:
+
+        - uses: actions/checkout@v3
+
+        - name: printing in windows
+          run: echo HI! running in windows
+               echo and deployed within github
+
