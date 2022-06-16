@@ -40,3 +40,13 @@ jobs:
         run: echo HI! running in windows
              echo and deployed within github
 
+  python-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: '.python-version' # Read python version from a file
+      - run: python my_script.py
+        
