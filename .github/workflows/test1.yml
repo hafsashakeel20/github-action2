@@ -46,6 +46,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
+        working-directory: ./scripts
         with:
           python-version-file: '.python-version' # Read python version from a file
       - run: python demo.py
