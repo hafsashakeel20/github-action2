@@ -54,5 +54,5 @@ jobs:
           #cd ../../scripts
           python demo.py
           #pwd
-        working-directory: ../../scripts  
+        working-directory: ./scripts  
         
