@@ -50,6 +50,8 @@ jobs:
           #working-directory: scripts/
           python-version-file: '.python-version' # Read python version from a file
       - run:
-          cd ../scripts
+          pwd
+          cd ../../scripts
           python demo.py
+          pwd
         
