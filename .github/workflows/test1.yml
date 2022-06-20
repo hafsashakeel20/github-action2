@@ -7,6 +7,8 @@ on:
     branches: [ "master" ]
   #pull_request:
   #  branches: [ "main" ]
+env:
+  file_name: demo.py  
 
 jobs:
   # This workflow contains a single job called "build"
@@ -52,7 +54,7 @@ jobs:
       - run:
           #pwd
           #cd ../../scripts
-          python demo.py
+          python file_name
           #pwd
-        working-directory: ./scripts  
+        working-directory: ./main/scripts  
         
