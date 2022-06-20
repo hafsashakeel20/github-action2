@@ -54,7 +54,7 @@ jobs:
       - run:
           #pwd
           #cd ../../scripts
-          python file_name
+          python $file_name
           #pwd
         working-directory: ./main/scripts  
         
