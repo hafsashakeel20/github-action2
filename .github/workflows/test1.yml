@@ -43,24 +43,24 @@ jobs:
   #       run: echo HI! running in windows
   #            echo and deployed within github
 
-  python-job:
-    runs-on: ubuntu-latest
+  # python-job:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
-        with:
-          #working-directory: scripts/
-          python-version-file: '.python-version' # Read python version from a file
-      - run:
-          #pwd
-          #cd ../../scripts
-          python $file_name
-          #pwd
-        working-directory: ./main/scripts  
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-python@v3
+  #       with:
+  #         #working-directory: scripts/
+  #         python-version-file: '.python-version' # Read python version from a file
+  #     - run:
+  #         #pwd
+  #         #cd ../../scripts
+  #         python $file_name
+  #         #pwd
+  #       working-directory: ./main/scripts  
 
   env-var-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v3
