@@ -10,6 +10,7 @@ on:
 env:
   file_name: demo.py  
   name_id: hafsashakeel20
+  value: ${{ secrets.SECRET_VALUE }}
 
 jobs:
   # This workflow contains a single job called "build"
@@ -60,11 +61,11 @@ jobs:
   #       working-directory: ./main/scripts  
 
   env-var-job:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
 
       - name: Print message on ubuntu
         run: echo file is running in $name_id repository 
-        
+             echo $value is a secret added to this repo
